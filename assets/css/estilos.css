@@ -1,0 +1,910 @@
+#div-motivo, #div-horarios{
+    padding: 5px;
+}
+
+#datos_permiso{
+    display: flex;
+}
+
+#motivo_permiso_detalle{
+    font-size: 12px;
+}
+
+.lineal{
+    display: flex;
+}
+
+.table>tbody>tr>td{
+    vertical-align: middle;
+}
+
+.col-contraseña {
+    background-color: lightblue;
+}
+
+#contenedor_buscar{
+    border: 1px solid lightgray;
+    background-color: #eaeaea;
+    padding: 3px;
+}
+
+.autocompletar {
+    width: 300px;
+    margin-left: 5px;
+}
+
+#titulo_tabla_empleados {
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid lightgray;
+    background-color: green;
+    border-radius: 3px 3px 0px 0px;
+    /*line-height: 100%;*/
+    /*position: absolute;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid #99bbe8!important;
+    overflow: hidden;
+    color: #444;
+    font-size: 13px;
+    text-align: center;
+    padding: 8px;*/
+}
+
+.tabla-empleados {
+    border: 1px solid lightgray;
+    border-right: 0;
+    width: 100%;
+}
+
+.tabla-empleados > thead > tr > th{
+    padding: 0px 5px;
+    background-color: #eaeaea;
+    border: 1px solid lightgray;
+}
+
+.tabla-empleados > tbody > tr > td > .form-control {
+    text-align: center;
+    height: 20px;
+    padding: 0px;
+}
+
+/* mensaje*/
+#mensaje {
+    /*background-color:  #ecb5b5;*/
+    color: red;
+    text-align: center;
+    /*padding: 5px 2px;
+    border-radius: 6px;
+    border: 1px solid red;*/
+ 
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 5;
+}
+
+ul{
+    padding: 0;
+}
+
+#total_dias{
+    padding: 3px;
+    background-color: #2fa9ce;
+}
+
+#total_dias_pendientes{
+    padding: 3px;
+    background-color: #f5ca3a;
+}
+
+#total_dias_autorizados{
+    padding: 3px;
+    background-color: #55d62a;
+}
+
+.modal-header {
+    padding: 10px;
+}
+
+#saldo_dias{
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.fc button .fc-icon {
+    position: relative;
+    top: -0.05em;
+    vertical-align: middle;
+}
+
+.fc button{
+    padding: 0;
+}
+
+h2{
+    font-size: 20px;
+}
+
+#fechas_seleccionadas > div{
+    display: flex;
+}
+
+span.btn-eliminar:hover{
+    cursor: pointer;
+}
+
+span.btn-eliminar{
+    display: block;
+    padding-right: 5px;
+    font-family: cursive;
+    color: #ab1313;
+    font-weight: bold;
+}
+
+span#eliminar-saldo-btn:hover{
+    cursor: pointer;
+}
+
+span#eliminar-saldo-btn{
+    display: block;
+    font-size: 20px;
+    padding-right: 5px;
+    font-family: cursive;
+    color: #ab1313;
+    font-weight: bold;
+}
+
+span.btn-actualizar:hover{
+    cursor: pointer;
+}
+
+span.btn-actualizar{
+    display: block;
+    background-color: #9a0303;
+    background-image: none;
+    width: 70px;
+    height: 20px;
+    font-weight: bold;
+    margin: 4px 0 0;
+    border: 1px solid #a6a6a6;
+    border-radius: 10px;
+    line-height: normal;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    color: #fff;
+    padding-left: 5px;
+}
+
+li:hover{
+    font-weight: bold;
+}
+
+li.guardados:hover{
+    font-weight: bold;
+    color: #9a0303;
+    list-style-type: none;
+}
+
+.saldos{
+    display: flex;
+    width: 300px;
+    margin: 3px;
+    border: 1px solid #8c8e8c;
+    border-radius: 5px;
+    /*JSSH*/
+    float: left;    
+}
+.columna-titulo{
+    background-color:#e0e0d1;
+}
+
+ .columna-valor{
+    background-color: white;
+    font-weight: bold;
+ }
+
+#cancelar_dias_marcados, #guardar_dias_marcados{
+    display: none;
+}
+
+.btn-rechazar{
+    display: block;
+    background-color: #9a0303;
+    background-image: none;
+    width: 20px;
+    height: 20px;
+    font-weight: bold;
+    margin: 4px 0 0;
+    border: 1px solid #a6a6a6;
+    border-radius: 10px;
+    line-height: normal;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    color: #fff;
+    padding-left: 5px;
+}
+
+.btn-rechazar:hover{ 
+    cursor: pointer; 
+}
+
+/* -- Botón cancelar -- */
+.btn-cancelar{
+    display: block;
+    background-color: #9a0303;
+    background-image: none;
+    width: 20px;
+    height: 20px;
+    font-weight: bold;
+    margin: 4px 0 0;
+    border: 1px solid #a6a6a6;
+    border-radius: 10px;
+    line-height: normal;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    color: #fff;
+    padding-left: 5px;
+}
+
+.btn-cancelar:hover{ 
+    cursor: pointer; 
+}
+
+#detalle_vacaciones{
+    /*width: 460px;*/
+}
+
+#detalle_vacaciones > div{
+    float: left;
+    display: block;
+}
+
+p{
+    font-weight: bold;
+}
+
+.tabla-solicitudes > thead > tr{
+    background-color: ghostwhite;
+}
+
+.centrar{
+    text-align: center;
+}
+
+td > .form-control{
+    height: 18px;
+}
+
+select.form-control {
+    height: 18px;
+    padding: 0px;
+}
+
+.fc-row.fc-week.fc-widget-content{
+    /*height: 50px;*/
+    min-height: 2.5em;
+}
+
+.tabla-solicitudes{
+    margin: 3px;
+    border: 1px solid #4CAF50;
+    /*width: 310px;*/
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    padding: 2px;
+}
+
+.table {
+    margin-bottom: 0px;
+}
+
+#contenido-flex{
+    margin-top: 5px;
+    display: flex;
+    border-top: 2px solid #c5bfbf;    
+}
+
+#div_fechas_seleccionadas{
+    width: 100%;
+    text-align: center;
+    margin: 5px;
+    /*padding: 5px;*/
+    border: 1px solid cadetblue;
+    border-radius: 5px;
+    background-color: #CEECF5;    
+}
+
+#div_fechas_pendientes{
+    width: 100%;
+    text-align: center;
+    margin: 5px;
+    /*padding: 5px;*/
+    border: 1px solid orange;
+    border-radius: 5px;
+    background-color: #f9e49c;
+}
+
+#div_fechas_autorizadas{
+    width: 100%;
+    text-align: center;
+    margin: 5px;
+    /*padding: 5px;*/
+    border: 1px solid green;
+    border-radius: 5px;
+    background-color: #BCF5A9;
+}
+
+.titulo{
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+    margin: 0px;    
+}
+
+.subtitulo{
+    font-weight: bold;
+    font-size: medium;
+    text-align: center;
+    margin: 0px;    
+}
+
+div#dias_disfrutar{
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #4CAF50;
+    border-radius: 5px;    
+    text-align: center;
+    width: 100%;
+}
+
+div#dias_pendientes{
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #4CAF50;
+    border-radius: 5px;
+    /*margin-left: auto;
+    margin-right: 0px;*/
+    width: 100%;
+}
+
+div#autorizados{
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #4CAF50;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: 0px;
+}
+
+
+select{
+    width: 370px;
+}
+
+.fc-sun, .fc-sat{
+    /*background-color: antiquewhite; */
+	background-color: lemonchiffon;
+
+}
+#calendar{
+    width: 260px;
+    display: inline-block;
+    margin: 5px;    
+}
+#cuerpo{
+    display: flex;
+}
+
+#fechas_seleccionadas, #fechas_pendientes, #fechas_autorizadas{
+    display: inline-block;
+    list-style-type: none;
+    /*font-size: medium;
+    font-weight: bold;
+    font-family: cursive;
+    color: darkslategray;*/    
+}
+
+.center-align {
+    text-align: -webkit-center;
+}
+
+.pd-10{
+	padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.pd-top-10{
+	padding-top: 10px;
+}
+
+div.little-space {
+    height: 20px;
+}
+
+td#requisition-detail{
+	color: #337ab7;
+	font-weight: bold;
+}
+
+/*#logout-btn{
+	color: #3D4952;
+	text-decoration: underline;
+}
+
+#logout-btn:hover{
+	color: #337ab7;
+}*/
+/*---------- Botón de autorizar ----------*/
+.btn{
+    padding: 2px 12px;    
+	background-color: #00A261;
+	color: #fff;
+	font-weight: bold;
+	height: 30px;
+	/*width: 120px;*/
+}
+
+.btn:hover{
+	background-color: #036F44;
+}
+
+#login{
+	width: 200px;
+}
+/*--------- Botón de autorizar ----------*/
+
+td#requisition-detail:hover{
+	text-decoration: underline;
+}
+/* ---------- Menu ------------ */
+.menu{	
+    padding: 9.5px;
+    margin: 0 0 10px;
+    font-size: 13px;
+    line-height: 1.42857143;
+    color: #fff;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #059856;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+div.split-menu {
+    display: table;
+    width: 100%;
+    padding: 10px;
+}
+div.right-align {
+	display: table-cell;
+	text-align: right;
+	margin-right: 5px;
+}
+div.left-align {
+	display: table-cell;
+	text-align: left;
+	margin-left: 5px;
+}
+/* ---------- Menu ------------ */
+
+#content-area{
+	/*width: 100%;*/
+    /*position: absolute;*/
+}
+
+.purchreq-title{
+	padding-left: 5px;
+	font-size: 18px;
+	margin-top: 10px;
+}
+
+.pp-left-5{
+	padding-left: 5px;
+}
+
+.container {
+    padding-right: 5px; 
+    padding-left: 5px; 
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    margin-right: 0px; 
+    margin-left: 0px; 
+}
+
+div.saldos {
+    display: block;
+    float: left;
+  }
+
+
+@media screen and (max-width: 480px) {
+    
+
+      /*  td.columna-titulo, td.columna-valor {
+            display: block !important;
+        }
+
+        div.saldos{
+            display: block;
+            margin: 5px;
+            float: none;
+            
+        }
+
+        .table {
+            margin-bottom: 0px;
+        }
+
+
+/*
+        .saldos{
+            float: none;
+        }
+ */       
+
+   /*     div.saldosAnticipados{
+            display: block;
+            margin: auto;
+        }
+
+        td.saldossiguientes {
+            display: block;
+        }
+
+        #calendar{
+            width: 100% !important;
+            display: inline-block;
+            margin: 5px;    
+        }
+
+        
+        
+        div#dias_disfrutar{
+            margin: 5px;
+            padding: 5px;
+            border: 1px solid #4CAF50;
+            border-radius: 5px;    
+            text-align: center;            
+        }
+
+        
+*/
+        
+}
+
+/* Para poner la tabla apilada */
+@media only screen and (max-width: 600px) {
+/* Force table to not be like tables anymore */
+#no-more-tables table,
+#no-more-tables thead,
+#no-more-tables tbody,
+#no-more-tables th,
+#no-more-tables td,
+#no-more-tables tr {
+display: block;
+padding: 1em;
+/*border-radius: 4px;*/
+}
+ 
+/* Hide table headers (but not display: none;, for accessibility) */
+#no-more-tables thead tr {
+position: absolute;
+top: -9999px;
+left: -9999px;
+}
+ 
+#no-more-tables tr { border: 1px solid #ccc; }
+  
+#no-more-tables td {
+/* Behave like a "row" */
+border: none;
+border-bottom: 1px solid #ddd;
+position: relative;
+padding-left: 50%;
+white-space: normal;
+text-align:left;
+}
+ 
+#no-more-tables td:before {
+/* Now like a table header */
+position: absolute;
+/* Top/left values mimic padding */
+top: 6px;
+left: 6px;
+width: 45%;
+padding-right: 10px;
+white-space: nowrap;
+text-align:left;
+font-weight: bold;
+}
+ 
+/*
+Label the data
+*/
+#no-more-tables td:before { content: attr(data-title); }
+}
+
+/*---------- Poner la tabla apilada -------------*/
+
+/* ----- Alternar colores en filas ----- */
+/* For small screen */
+tr:nth-child(even){
+  	background-color: #F2F2F2;
+  	color: #3D4952;
+}
+
+/*tr:nth-child(even):hover{
+  	background-color: #B6B8BA;
+}
+
+tr:nth-child(odd):hover{
+	background-color: #B6B8BA;  	
+	color: #3D4952;
+}*/
+/* ----- Alternar colores en filas ----- */
+
+.navbar-inverse {
+    background-color: #059856;
+    border-color: #fff;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #fff;
+	font-size: 13px;
+	font-weight: 700;
+}
+
+.container-fluid {
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.col-md-10{
+    padding: 0;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #fff;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: #000;
+    background: #62d29f;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: #004a29;
+}
+
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+    background-color: #62d29f;
+}
+.navbar-inverse .navbar-toggle {
+    border-color: #fff;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: #fff;
+}
+
+/*
+    Preloader
+*/
+.cargando {
+    position: absolute;
+    z-index: 99;
+    margin: 0 auto;
+    top: 40%;
+    right: 40%;
+    width: 70px;
+    height: 70px;
+    border: 10px solid #eee;
+    border-top: 10px solid #666;
+    border-radius: 50%;
+    animation-name: girar;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/*----------------*/
+
+
+/* ---- Tooltip ---- */
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+ 
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 5;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+/* ------------- */
+
+/* -- -- */
+#dias_autorizados{
+    display: inline-flex;
+}
+/* ----- */
+
+.big-checkbox {width: 34px; height: 34px;}
+
+#saldo_adelantado{
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.saldosAnticipados{
+    display: flex;
+    width: 400px;
+    margin: 3px;
+    border: 1px solid #8c8e8c;
+    border-radius: 5px;    
+}
+
+#contenido-flex1{
+    margin-top: 5px;
+    display: flex;
+    border-top: 2px solid #c5bfbf;    
+}
+
+
+#calendar2{
+    width: 360px;
+    display: inline-block;
+    margin: 5px;    
+}
+
+#detalle_vacaciones1{
+    /*width: 460px;*/
+}
+
+#detalle_vacaciones1 > div{
+    float: left;
+    display: block;
+}
+
+#div_fechas_seleccionadas1{
+    width: 100%;
+    text-align: center;
+    margin: 5px;
+    /*padding: 5px;*/
+    border: 1px solid cadetblue;
+    border-radius: 5px;
+    background-color: #CEECF5;    
+}
+
+#total_dias1{
+    padding: 3px;
+    background-color: #2fa9ce;
+}
+#fechas_seleccionadas1, #fechas_pendientes1, #fechas_autorizadas1{
+    display: inline-block;
+    list-style-type: none;
+    /*font-size: medium;
+    font-weight: bold;
+    font-family: cursive;
+    color: darkslategray;*/    
+}
+
+#div_fechas_pendientes1{
+    width: 100%;
+    text-align: center;
+    margin: 5px;
+    /*padding: 5px;*/
+    border: 1px solid orange;
+    border-radius: 5px;
+    background-color: #f9e49c;
+}
+
+#total_dias_pendientes1{
+    padding: 3px;
+    background-color: #f5ca3a;
+}
+
+li.guardados1:hover{
+    font-weight: bold;
+    color: #9a0303;
+    list-style-type: none;
+}
+span.btn-eliminar1:hover{
+    cursor: pointer;
+}
+
+span.btn-eliminar1{
+    display: block;
+    padding-right: 5px;
+    font-family: cursive;
+    color: #ab1313;
+    font-weight: bold;
+}
+
+
+#fechas_seleccionadas1 > div{
+    display: flex;
+}
+#saldo_dias1{
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 20px;
+}
+#div_fechas_autorizadas1{
+    width: 100%;
+    text-align: center;
+    margin: 5px;
+    /*padding: 5px;*/
+    border: 1px solid green;
+    border-radius: 5px;
+    background-color: #BCF5A9;
+}
+
+#total_dias_autorizados1{
+    padding: 3px;
+    background-color: #55d62a;
+}
+
+.CheckAdelantarVacaciones {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.btn_fratech{
+    background: #193b83;
+	
+}
+
+.btn_fratechAutorizar{
+    background: #193b83;
+	padding: 2px 12px;
+   
+    color: #fff;
+    font-weight: bold;
+    height: 30px;
+    /* width: 120px; */
+}
+
+.btn_fratechAutorizar:disabled{
+    background: #5C93D8;
+	padding: 2px 12px;
+    color: #fff;
+    font-weight: bold;
+    height: 30px;
+}
+
+.tabla_fratech{
+    background: #193b83 !important;
+}
